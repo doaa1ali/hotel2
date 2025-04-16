@@ -70,8 +70,6 @@ const TableList = () => {
         }
     };
     
-    
-    
 
     const handleImageUpload = async (event) => {
         const file = event.target.files[0];
@@ -110,24 +108,6 @@ const TableList = () => {
         }
     };
     
-
-
-    // const { getRootProps, getInputProps } = useDropzone({
-    //     accept: "image/*",
-    //     multiple: true,
-    //     maxFiles: 5,
-    //     onDrop: (acceptedFiles) => {
-    //         const remainingSlots = 4 - files.length;
-    //         if (remainingSlots > 0) {
-    //             const newFiles = acceptedFiles.slice(0, remainingSlots);
-    //             setFiles((prevFiles) => [...prevFiles, ...newFiles]);
-    //         } else if (!isUploadReplaced && acceptedFiles.length > 0) {
-    //             setUploadedImage(URL.createObjectURL(acceptedFiles[0]));
-    //             setIsUploadReplaced(true);
-    //         }
-    //     },
-    // });
-
 
   return (
     <div style={{ padding: "16px" }}>
